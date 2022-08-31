@@ -167,10 +167,7 @@ async def interface():
                 # Security Keys
                 manager_public_key = serialization.load_pem_public_key(manager_public_key_file.read(), backend=default_backend())
                 repository_public_key = serialization.load_pem_public_key(repository_public_key_file.read(), backend=default_backend())
-                
-                #enter system
-                print("\nWelcome to 'Blockchain-Based Auction Manager'!\nThis program was developed by Filipe Pires (85122) and Joao Alegria (85048) for the discipline SIO 2018/19.\n")
-                
+                                
                 entered=False
                 while not entered:
                     user=input("Type in your username: ")
